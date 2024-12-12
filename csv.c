@@ -32,7 +32,7 @@ int readCsv(const char *filename, unsigned char names[MAX_STUDENTS][MAX_NAME_SIZ
         }
 
         if (*nbStudents >= MAX_STUDENTS) {
-            printf("Pas assez de place pour tous les étudiants\n");
+            printf("Maximum number of students (%d) exceeded \n", MAX_STUDENTS);
             fclose(file);
             return 0;
         }

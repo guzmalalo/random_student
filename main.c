@@ -14,7 +14,7 @@ int main(){
     unsigned char names[MAX_STUDENTS][MAX_NAME_SIZE];
 
     // filename
-    const char *filename = "../groupe_2.csv";
+    const char *filename = "../test.csv";
 
     // Load names
     if (readCsv(filename, names, &nbStudents)) {
